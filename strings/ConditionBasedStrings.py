@@ -42,15 +42,43 @@ print(new_val)
 
 
 
-# for i in range(0,len(s2),new_val):
+## step value as new_val 
 
-#     for j in range(i,i+new_val):
-#         print(s2[j] , end = "")
+res1 = ""
 
-#     print()
+for i in range(0,len(s2),new_val):
+
+    
+
+   
+
+    print()
 
 
+
+
+
+
+
+
+
+'''
 
 ## Approach 2 : add the \n at the end of every count of sqr root val.. and at last print s2..
 
 
+res = ""
+count = 0
+for i in range(len(s2)):
+
+    if(new_val == count):
+        res += '\n'
+        count = 0
+
+    count += 1
+    res += s2[i]
+
+print(res)
+
+
+'''
