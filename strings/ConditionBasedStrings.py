@@ -44,15 +44,15 @@ print(new_val)
 
 ## step value as new_val 
 
-res1 = ""
+# res1 = ""
 
-for i in range(0,len(s2),new_val):
+# for i in range(0,len(s2),new_val):
 
     
 
    
 
-    print()
+#     print()
 
 
 

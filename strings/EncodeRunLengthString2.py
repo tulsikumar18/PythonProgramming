@@ -1,0 +1,7 @@
+s2 = "aaaaaabbccccccdddeeefffffggghaaaabbb"
+
+
+
+
+
+
