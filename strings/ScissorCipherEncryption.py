@@ -17,17 +17,33 @@ for i in s1:
     if i == " ":
         res += " "
 
-    elif ord(i) + shift > 122:
+    elif ord(i) >= 65 and ord(i) <= 90:
 
-        val = (ord(i) + shift ) % 122
-        
-        res += chr(97 + val)
+        if ord(i) + shift > 90:
+            val = (ord(i) + shift ) % 90
+            res += chr(65+val)
 
-    else:
+        else:
+            res += chr(ord(i) + shift)
 
-        res += chr(ord(i) + shift)
+
+    elif ord(i) >= 97 and ord(i) <= 122:
+    
+        if ord(i) + shift > 122:
+
+            val = (ord(i) + shift ) % 122
+            
+            res += chr(97 + val)
+
+        else:
+
+            res += chr(ord(i) + shift)
 
 
 print(res)
+
+
+
+
 
 
