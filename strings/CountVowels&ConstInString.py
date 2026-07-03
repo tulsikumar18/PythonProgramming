@@ -42,3 +42,7 @@ print(freq)
 
 
 # Approch 2 : use the uniquness property of dictionary and push it there..instead of using set for it..
+
+ # if freq[i] not in freq:
+
+    #     freq[i] = [vow,const]

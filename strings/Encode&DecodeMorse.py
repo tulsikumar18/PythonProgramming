@@ -95,8 +95,6 @@ print(decode_morse(d2,morse_code))
 
 
 
-
-
 def decode_morse(d2, code):
 
     res = ""
@@ -109,12 +107,22 @@ def decode_morse(d2, code):
 
             case '-----' : res += '0'
 
-            case ''
+            case '.----' : res += '1'
 
+            case '..---' : res += '2'
 
+            case "...--" : res += "3"
 
+            case "....-" : res += "4"
 
-    
+            case "....." : res += "5"
+            case "-....": res += "6"
+            case "--..." : res += "7"
+            case "---.." : 	res += "8"
+
+            case "----." : res += "9"
+
+    return res
 
 
 print('Enter the morse code with 5 characters only and then give one space b/w every 5 characters...: ')

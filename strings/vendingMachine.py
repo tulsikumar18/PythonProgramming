@@ -51,7 +51,13 @@ class Vending_Machine:
             self.cart[prod] = qty
 
         else:
-            print('the product is not present in the cart..')
+            ## if the prod is not present in the cart then check if it is present in the allproducts
+
+            if prod in self.all_products:
+
+                self.cart[prod] = qty
+            else:
+                print('the product is not present in the cart..')
 
 
     def total_bill(self):
@@ -67,6 +73,8 @@ class Vending_Machine:
 
             self.total_amnt += self.v * self.all_products[self.k]
 
+        print('==============================')
+
         print('Total Bill amount to be paid : ' , self.total_amnt)
         print('======== End of Bill ========')
 
@@ -78,11 +86,15 @@ obj.add_items('bingo',12)
 obj.add_items('oreo',9)
 obj.add_items('dietcoke',12)
 
+# obj.display_items()
+# obj.total_bill()
+
+obj.update_items('dietcoke',20)
+
+obj.update_items('chikki',30)
 obj.display_items()
 obj.total_bill()
 
-obj.update_items('dietcoke',20)
-obj.display_items()
-obj.total_bill()
+
 
 

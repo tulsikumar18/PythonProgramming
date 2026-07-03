@@ -26,3 +26,6 @@ for k,v in freq.items():
 
 print(res1)
 
+
+
+
