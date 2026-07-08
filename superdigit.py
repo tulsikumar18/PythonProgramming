@@ -1,3 +1,6 @@
+# Digital Sum : The super digit of a number is obtained by repeatedly adding its digits until 
+# only one digit remains.
+
 n = int(input('Enter the number: '))
 
 res = 0
