@@ -23,3 +23,7 @@ print(lcm)
 
 print('Iter_count',Iter_count) # it shows the iteration count of the loop , how many times it has run
 
+
+
+
+

@@ -1,5 +1,5 @@
-# A Neon Number is a number where the sum of the digits and its square is equal to the
-#  original number.
+# A Neon Number is a number where the sum of the digits of its square is equal 
+# to the original number.
 
 
 # n = int(input('Enter the number: '))
