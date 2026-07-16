@@ -40,16 +40,20 @@ else:
 
 l1 = [10,5,3,8,4,80,7,80]
 
+l1 = [10,2,5,2]
+
 if len(l1)>0:
 
-    max1 = l1[0]
-    max2 = l1[0]
+    max1 = -1
+    max2 = -1
 
-    for i in l1[1:]:
+    for val in l1:
 
-        if i > max1:
+        if val > max1:
             max2 = max1
-            max1 = i
+            max1 = val
+        elif max1 > val > max2:
+            max2 = val
 
     print(max2)
 
