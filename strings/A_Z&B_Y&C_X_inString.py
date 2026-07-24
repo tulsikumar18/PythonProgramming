@@ -1,4 +1,12 @@
 
+
+# Return the transformed string.
+# Example 1
+# Input: ABCXYZ
+
+# Output: ZYXCBA
+
+
 # # Approach 1 : using a list where each pairs are mentioned...
 
 # def Convert_A_Z_B2Y_C2X(s1):
@@ -55,7 +63,7 @@
 
 
 
-# Approach 2 : using ord function ...
+# Approach 2 : using ord function and finding the difference of the from both sides....
 
 def Convert_A_Z_B2Y_C2X(s1):
 
@@ -68,8 +76,6 @@ def Convert_A_Z_B2Y_C2X(s1):
         res += chr(ord('Z') - diff)
 
     return res
-
-
 
 
 s1 = input('Enter the string: ')

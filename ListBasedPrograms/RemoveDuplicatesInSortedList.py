@@ -32,10 +32,3 @@
 
 
 
-
-d1 = {1 : 'one', 2: 'two', 3 : 'three'}
-d2 = {1 : 'one', 4: 'four'}
-
-d1.update(d2)
-
-print(d1)
